@@ -14,9 +14,9 @@ class UrlExtracter():
                     .click()
         self.browser.find_elements_by_xpath('//*[@id="login_field"]')
         login_field = self.browser.find_elements_by_xpath('//*[@id="login_field"]')
-        login_field[0].send_keys('emugundhan@gmail.com')
+        login_field[0].send_keys('xxx@gmail.com')
         password_field = self.browser.find_elements_by_xpath('//*[@id="password"]')[0]
-        password_field.send_keys('mgdnpass99')
+        password_field.send_keys('xxxx')
         self.browser.find_elements_by_xpath('//*[@id="login"]/form/div[3]/input[3]')[0].click()
         self.browser.find_elements_by_xpath('//*[@id="your_repos"]/div/div[2]/ul/li[1]/a')[0].click()
         for file in self.browser.find_elements_by_xpath('//tr[@class="js-navigation-item"]//td[@class="content"]//span//a'):
