@@ -49,7 +49,6 @@ class UrlExtracter():
 
     def file_downlader(self, link_dict):
         link_urls = link_dict.keys()
-        os.chdir(self.download_location)
         for url in link_urls:
             master_link = 'https://raw.githubusercontent.com/dhan78/{0}/master/'.format(self.repo_name)
             url_link = link_dict.get(url)
